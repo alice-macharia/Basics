@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        /* Style the whole page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* Style the form container */
+        form {
+            background-color: white;
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the labels */
+        label {
+            display: inline-block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Style text inputs, date input and dropdown */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        /* Add a highlight when an input is selected */
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+
+        /* Space out radio buttons and checkboxes */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 8px 5px 18px 0;
+            color: #007bff;
+        }
+
+        /* Style the submit button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        /* Change button color when hovering */
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="full_name">Full Name:</label>
+        <input type="text" name="full_name" id="full_name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="0786334556">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+
+        <label for="gender">Gender</label>
+
+        <input type="radio" name="gnder" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" name="tennis" id="tennis" value="tennis">
+        <label for="tennis">Tennis</label>
+
+        <input type="checkbox" name="rugby" id="rugby" value="rugby">
+        <label for="rugby">Rugby</label>
+
+        <input type="checkbox" name="volleyball" id="volleyball" value="volleyball">
+        <label for="volleyball">Volleyball</label>
+
+        <input type="checkbox" name="soccer" id="soccer" value="soccer">
+        <label for="soccer">Soccer</label><br>
+
+        <label for="county">County</label>
+        <select name="county" id="county">
+            <option value=""></option>
+            <option value="nairobi">Nairobi</option>
+            <option value="nakuru">Nakuru</option>
+            <option value="kisumu">Kisumu</option>
+        </select>
+
+        <button>Submit:</button>
+    </form>
+</body>
+
+</html>
