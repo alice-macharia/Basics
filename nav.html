@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+
+        .nav-item {
+            width: 68%;
+            background: plum;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-item ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav-item li {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .nav-item a:hover {
+            color: coral;
+            border-bottom: 1px solid coral;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-item">
+            <img src="https://pin.it/51CiEHJ5U" alt="Apple logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</body>
+
+</html>
